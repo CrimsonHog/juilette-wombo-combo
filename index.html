@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<header>
+    <nav>
+        <a href="https://github.com/CrimsonHog" target="_blank">GitHub</a>
+        <a href="https://github.com/CrimsonHog/juliette-wombo-combo" target="_blank">Code</a>
+        <a>Ethan Rinke</a>
+        <span></span>
+    </nav>
+</header>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CIS 376 Final Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css'>
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+
+<!-- partial:index.partial.html -->
+
+<div class="container-fluid">
+    <div class="page-header">
+        <h1>'Juliette' <small>CIS 376</small> Final Project</h1>
+        <p class="lead">A showcase of bad UX design on Amazon's account page, by Ethan Rinke.</p>
+    </div>
+</div>
+
+<body id="explanation">
+
+    <!-- Explanation for Bad UX -->
+    <p id="body">When looking through amazon, the UI for the most part isnt that big of a deal. Its easy to understand, works based around your interests and shows you deals and all that. However, when looking at your profile page, its just a giant mess. Having a bunch of cards on the center of the page isnt bad. Its the part after that is the mess. Its a bunch of lists with numerous hyperlinks, all bunched together. It hurts the eyes to look at and read through everything. Which comes to what I'm looking to solve, the hyperlinks.</p>
+
+    <img id="amazonMess" src="images/amazonmess.jpg" alt="Hyperlink Cluster">
+
+
+    <!-- How im going to solve it -->
+    <p id="body">What I feel is a good direction to take with fixing the hyper links, is to take all the main choices for the hyperlinks, and put them in a dropdown list, that once you select a choice it will show the options for that target area. (Currently not every option is shown as this is a prototype) </p>
+
+    <!-- Fix for amazon profile account -->
+    <div class="container">
+        <div class="selected-item">
+            <p>You Selected : <span>Empty</span></p>
+        </div>
+
+        <div class="dropdown">
+            <span class="selLabel">Select Area</span>
+            <input type="hidden" name="cd-dropdown">
+            <ul class="dropdown-list">
+                <li data-value="1">
+                    <span>Ordering</span>
+                </li>
+                <li data-value="2">
+                    <span>Digital content</span>
+                </li>
+                <li data-value="3">
+                    <span>Memberships</span>
+                </li>
+                <li data-value="4">
+                    <span>Communication</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- Further plans for the list -->
+    <p id="body">When an option is selected, the plan is for another tabel to appear and allow for you to look at the links for the different areas from the main choice. For design, it would be best if it was to be put beside the cards instead of underneath it like shown above. Whats even worse about the picture above is that it doesnt show every option. Not giving the entire image of how its a giant mess on the page.</p>
+
+    <img id="amazonHyperlinks" alt="All of the Hyperlinks" src="images/hyperlinkmess.jpg">
+
+    <p id="body">I feel that with the dropdown list, it would help clean up the space on the account page. Being able to keep with the cards. Another way that the space could be useful with the dropdown list, is that once a selection on the list is made, the cards that are on the page can change to fit the selection. All the dev team would need to do, is change the color scheme for the table to have it fit with the rest of the layout for the website. So the page after adding the table would look like this.</p>
+
+    <img id="solution" alt="New Layout" src="images/solution.jpg">
+
+</body>
+<!-- partial -->
+</html>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js'></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="script/script.js"></script>
+
+
+
